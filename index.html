@@ -83,14 +83,14 @@ h2#dt{margin:0 0 2px;font-size:1.3rem}
 <header>
   <span class="fl2" style="left:2%;top:20px">🧪</span><span class="fl2" style="right:3%;top:10px;animation-delay:-1s">🌙</span><span class="fl2" style="left:8%;top:110px;animation-delay:-2s">⚗️</span><span class="fl2" style="right:9%;top:120px;animation-delay:-.5s">🎄</span>
   <div style="font-size:3rem">🐭🥽🐁</div>
-  <h1>Calendario dell’Avvento dei Topi Chimici</h1>
-  <p>Quattro piani di laboratorio, ventiquattro porticine: ogni casella nasconde un esperimento da giocare!</p>
+  <h1>Calendario dell’Avvento per topolice</h1>
+  <p>Benvenuta su 4 piani di laboratorio dell'avvento, con minigiochi ongni giorno!</p>
   <div class="bar"><i id="pb"></i></div>
   <p id="pt"></p>
   <label><input type="checkbox" id="real"> Sblocca le caselle solo nei giorni di dicembre</label>
 </header>
 <main id="grid"></main>
-<footer><button class="sm" id="rs">Ricomincia da zero</button></footer>
+<footer><button class="sm" id="rs">Restarta tutto</button></footer>
 <dialog id="dlg">
   <h2 id="dt"></h2>
   <p class="say" id="ds"></p>
@@ -114,11 +114,11 @@ const PR=["🎁","🧼","🔮","🧿","🌋","🎄","🎆","⛄","🍭","🧁","
 const TY=["cauldron","runner","pipes","mix","catch","whack"];
 const SAY={cauldron:"Il Prof. Gorgonzola ha lasciato il calderone acceso: prepara la ricetta!",runner:"Tocca lo schermo o premi spazio per saltare gli oggetti da laboratorio.",pipes:"Tocca i tubi per ruotarli e portare l’acqua fino alla provetta.",mix:"Aggiungi gocce di colore fino a ottenere la pozione giusta.",catch:"Muovi il cestino con il dito o il mouse e prendi solo le cose buone.",whack:"I topi sbucano dai becher: acchiappali tutti!"};
 const V={
-cauldron:[["Sapone dei topi","Mescola olio e soda",[["🫒","olio"],["🧂","soda"],["🍋","limone"],["🧀","formaggio"]],[0,1],"🧼"],
+cauldron:[["Crea il sapone odore topo","Mescola olio e soda",[["🫒","olio"],["🧂","soda"],["🍋","limone"],["🧀","formaggio"]],[0,1],"🧼"],
  ["Vulcano in miniatura","Bicarbonato, aceto e colorante rosso",[["🧂","bicarbonato"],["🍶","aceto"],["🔴","colorante"],["🍬","zucchero"],["🧀","formaggio"]],[0,1,2],"🌋"],
  ["Elisir di Natale","Zucchero, ghiaccio e una stellina",[["🍬","zucchero"],["🧊","ghiaccio"],["⭐","stellina"],["🧀","formaggio"]],[0,1,2],"🎄"],
  ["Fuochi d’artificio","Sale per il giallo, rame per il verde, e un po’ di fuoco",[["🧂","sale"],["🟢","rame"],["🔥","fuoco"],["🧀","formaggio"]],[0,1,2],"🎆"]],
-runner:[["Corri, topo, corri!",15,5,["🧪","⚗️"]],["Maratona in laboratorio",18,6,["🔥","🧪"]],["Fuga dalla fabbrica",20,6.5,["🧫","🔥","⚗️"]],["Sprint finale",24,7,["🔥","🧪","🧫"]]],
+runner:[["Corri, topoCoglione, corri!",15,5,["🧪","⚗️"]],["Maratona in laboratorio, scappa dai problemi",18,6,["🔥","🧪"]],["Fuga dalla fabbrica",20,6.5,["🧫","🔥","⚗️"]],["Sprint finale",24,7,["🔥","🧪","🧫"]]],
 pipes:[["Tubi del laboratorio",["ILIL","LLII","ILLI"],0,1],["Il grande idraulico",["IILL","ILIL","ILIL"],2,0],["Alambicchi in fuga",["LLIL","ILLI","LILI"],0,1],["Rete idrica dei topi",["IILI","LILI","LILI"],2,0]],
 mix:[["Pozione viola",{r:1,b:1}],["Pozione verde",{b:1,y:1}],["Pozione arancione",{r:1,y:1}],["Pozione rosa",{r:1,w:1}]],
 catch:[["Neve contro fiamme","❄️","🔥",10],["Provette sì, veleni no","🧪","☠️",10],["Bolle e bombe","🫧","💣",12],["Regali e petardi","🎁","🧨",12]],
